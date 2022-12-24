@@ -9,9 +9,9 @@ var quoteTweetInit = function quoteTweetInit() {
     function createEmbed(src, node) {
       var iframe = document.createElement("iframe");
       iframe.setAttribute("src", src + "/embed");
-      iframe.setAttribute("scrolling", "no");
       iframe.setAttribute("frameborder", "0");
       iframe.style.width = "100%";
+      iframe.style.height = "300px";
       iframe.style.marginBlock = "0.75em";
       iframe.style.border = "none";
       iframe.style.overflow = "hidden";

@@ -27,7 +27,7 @@ var quoteTweetInit = function quoteTweetInit() {
         nodes.forEach(function (node) {
           const quotedPost = node.querySelector(".status-link[href^='https://'][href*='/@']");
           if (quotedPost) {
-            createEmbed(quotedPost.getAttribute('href'), node);
+            createEmbed(quotedPost.getAttribute('href'), node.querySelector(".status-link[href^='https://'][href*='/@']").parentElement.parentElement.parentElement.parentElement);
             quotedPost.remove();
           }
         });
